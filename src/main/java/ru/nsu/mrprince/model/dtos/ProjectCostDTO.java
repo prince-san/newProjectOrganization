@@ -2,15 +2,13 @@ package ru.nsu.mrprince.model.dtos;
 
 import lombok.Data;
 
-import java.util.Set;
-
 @Data
-public class DepartmentDTO {
+public class ProjectCostDTO {
 
     private Integer id;
 
     private String name;
 
-    private EmployeeShortDTO leader;
+    private Double cost;
 
 }

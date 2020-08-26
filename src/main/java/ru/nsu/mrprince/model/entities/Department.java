@@ -14,7 +14,7 @@ public class Department extends AbstractEntity{
 
     private String name;
 
-    @ManyToOne
+    @OneToOne
     private Employee leader;
 
     @OneToMany

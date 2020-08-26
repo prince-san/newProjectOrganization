@@ -9,6 +9,7 @@ import ru.nsu.mrprince.model.entities.Project;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.Set;
 
 @Getter
 @Setter

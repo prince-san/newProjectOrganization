@@ -4,9 +4,9 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.Set;
 
 @Getter
@@ -18,13 +18,16 @@ public class Work extends AbstractEntity{
 
     private Double cost;
 
-    @OneToMany
+    @ManyToMany
     private Set<Equipment> equipment;
+
+    @ManyToOne
+    private Project project;
 
     @ManyToOne
     private Subcontractor subcontractor;
 
-    private Date startDate;
+    private LocalDate startDate;
 
-    private Date endDate;
+    private LocalDate endDate;
 }

@@ -5,8 +5,9 @@ import lombok.Setter;
 import ru.nsu.mrprince.model.entities.employees.Technician;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -21,7 +22,7 @@ public class Equipment extends AbstractEntity{
     @ManyToOne
     private Department department;
 
-    @ManyToOne
-    private Project project;
+    @ManyToMany
+    private Set<Work> works;
 
 }

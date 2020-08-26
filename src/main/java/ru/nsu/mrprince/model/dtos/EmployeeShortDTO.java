@@ -2,15 +2,17 @@ package ru.nsu.mrprince.model.dtos;
 
 import lombok.Data;
 
-import java.util.Set;
+import java.time.LocalDate;
 
 @Data
-public class DepartmentDTO {
+public class EmployeeShortDTO {
 
     private Integer id;
 
     private String name;
 
-    private EmployeeShortDTO leader;
+    private LocalDate birthDate;
+
+    private String job;
 
 }

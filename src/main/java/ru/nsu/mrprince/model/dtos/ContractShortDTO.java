@@ -5,16 +5,16 @@ import lombok.Data;
 import java.time.LocalDate;
 
 @Data
-public class EmployeeDTO {
+public class ContractShortDTO {
 
     private Integer id;
 
     private String name;
 
-    private LocalDate birthDate;
+    private String supervisor;
 
-    private String job;
+    private LocalDate startDate;
 
-    private String department;
+    private LocalDate endDate;
 
 }
